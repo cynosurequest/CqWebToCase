@@ -6,30 +6,41 @@
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <style>
-label{
-display: inline-block;
-width: 150px;
-text-align: left;
-}
-input{
-display: inline-block;
-width: 150px;
-text-align:left;
-}
-
-.registerbtn {
-  background-color: #33E3FF;    
-  color: black;  
-  padding: 8px 15px; 
-  margin: 0 155px;  
-  border: none;  
-  cursor: pointer;  
-  width: 5%;  
-  opacity: 0.9;  
-}  
-
-
-</style>
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    input,
+    select,
+    textarea {
+      display: inline-block;
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .registerbtn {
+      background-color: #33E3FF;
+      color: black;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      width: auto;
+      opacity: 0.9;
+    }
+    .form-container {
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form {
+      text-align: center;
+    }
+  </style>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
@@ -53,7 +64,8 @@ text-align:left;
 
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-Product:<select  id="00N8e000003eOKw" multiple="multiple" name="00N8e000003eOKw" title="Product"><option value="GC1040">GC1040</option>
+<label style="width: 150px;" for="product">Product</label>
+<select  id="00N8e000003eOKw" multiple="multiple" name="00N8e000003eOKw" title="Product" style="width: 300px;"><option value="GC1040">GC1040</option>
 <option value="GC1060">GC1060</option>
 <option value="GC3020">GC3020</option>
 <option value="GC3040">GC3040</option>
@@ -68,6 +80,6 @@ Product:<select  id="00N8e000003eOKw" multiple="multiple" name="00N8e000003eOKw"
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<input type="submit" name="submit">
+<input class="registerbtn" type="submit" name="submit" >
 
 </form>
